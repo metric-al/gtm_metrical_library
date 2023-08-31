@@ -16,27 +16,27 @@ For general help setting up Google Tag Manager, see the Google developers [GTM g
 
 - [Tag Fields](#tag-fields)
 
-[Metrical Library Tag](#🏷️-metrical-library-tag)
+[Metrical Library Tag](#metrical-library-tag)
 
 [Metrical Action Tags](#metrical-action-tags)
 
-- [Metrical Action - Page Load Tag](#🏷️-metrical-action---page-load-tag)
+- [Metrical Action - Page Load Tag](#metrical-action---page-load-tag)
 
-- [Metrical Action - Product Information Tag](#🏷️-metrical-action---product-information-tag)
+- [Metrical Action - Product Information Tag](#metrical-action---product-information-tag)
 
-- [Metrical Action - View Cart Tag](#🏷️-metrical-action---view-cart-tag)
+- [Metrical Action - View Cart Tag](#metrical-action---view-cart-tag)
 
-- [Metrical Action - Add to Cart Tag](#🏷️-metrical-action---add-to-cart-tag)
+- [Metrical Action - Add to Cart Tag](#metrical-action---add-to-cart-tag)
 
-- [Metrical Action - Remove From Cart Tag](#🏷️-metrical-action---remove-from-cart-tag)
+- [Metrical Action - Remove From Cart Tag](#metrical-action---remove-from-cart-tag)
 
-- [Metrical Action - Replace Cart Tag](#🏷️-metrical-action---replace-cart-tag)
+- [Metrical Action - Replace Cart Tag](#metrical-action---replace-cart-tag)
 
-- [Metrical Action - Clear Cart Tag](#🏷️-metrical-action---clear-cart-tag)
+- [Metrical Action - Clear Cart Tag](#metrical-action---clear-cart-tag)
 
-- [Metrical Action - Start Checkout Tag](#🏷️-metrical-action---start-checkout-tag)
+- [Metrical Action - Start Checkout Tag](#metrical-action---start-checkout-tag)
 
-- [Metrical Action - Order Placed Tag](#🏷️-metrical-action---order-placed-tag)
+- [Metrical Action - Order Placed Tag](#metrical-action---order-placed-tag)
 
 [Miscellaneous](#miscellaneous)
 
@@ -106,7 +106,7 @@ For each of the tags below, you will find a table containing the fields availabl
 
     Your input to the "Item Object ID Key Name" field should be `prodId`. Note that there are no double curly braces surrounding the input like there were in the GTM variable example. These fields are not GTM variables. Metrical needs to know how to access the data within objects when fields are repeatable and can't be represented by GTM variables. This is what the object key category of fields is for. The value data type column in the fields table tells you what type the key's associated value should be.
 
-## 🏷️ Metrical Library Tag
+## Metrical Library Tag
 
 [GitHub](https://github.com/metric-al/gtm_metrical_library) | [Community Template Gallery]()
 
@@ -153,7 +153,7 @@ You may not have all of these events or all the information available that a giv
 If you don’t have a specific piece of data that is highlighted in the example call, you can omit that key/value pair or just set the value to null.
 
 
-### 🏷️ Metrical Action - Page Load Tag
+### Metrical Action - Page Load Tag
 
 [GitHub](https://github.com/metric-al/gtm_page_load) | [Community Template Gallery]()
 
@@ -200,7 +200,7 @@ The Metrical Library Tag must be set to fire immediately before each and every M
 It is recommended that you trigger Metrical Action - Page Load Tag on a Page View - DOM Ready trigger type. However, if you have a custom event that fires when the DOM has loaded, you may opt to trigger the Metrical Action - Page Load Tag with that event.
 
 
-### 🏷️ Metrical Action - Product Information Tag
+### Metrical Action - Product Information Tag
 
 [GitHub](https://github.com/metric-al/gtm_product_information) | [Community Template Gallery]()
 
@@ -237,7 +237,7 @@ The Metrical Library Tag must be set to fire immediately before each and every M
 This tag should be triggered by a custom event configured to fire when your product information becomes available.
 
 
-### 🏷️ Metrical Action - View Cart Tag
+### Metrical Action - View Cart Tag
 
 [GitHub](https://github.com/metric-al/gtm_view_cart) | [Community Template Gallery]()
 
@@ -258,7 +258,7 @@ The Metrical Library Tag must be set to fire immediately before each and every M
 This tag should be triggered by a custom event that is configured to fire when the customer views their cart information.
 
 
-### 🏷️ Metrical Action - Add to Cart Tag
+### Metrical Action - Add to Cart Tag
 
 [GitHub](https://github.com/metric-al/gtm_add_to_cart) | [Community Template Gallery]()
 
@@ -287,7 +287,7 @@ The Metrical Library Tag must be set to fire immediately before each and every M
 This tag should be triggered by a custom event that is configured to fire when an item or items are added to a customer's cart.
 
 
-### 🏷️ Metrical Action - Remove From Cart Tag
+### Metrical Action - Remove From Cart Tag
 
 [GitHub](https://github.com/metric-al/gtm_remove_from_cart) | [Community Template Gallery]()
 
@@ -314,7 +314,7 @@ The Metrical Library Tag must be set to fire immediately before each and every M
 This tag should be triggered by a custom event that is configured to fire when an item or items are removed from a customer's cart.
 
 
-### 🏷️ Metrical Action - Replace Cart Tag
+### Metrical Action - Replace Cart Tag
 
 [GitHub](https://github.com/metric-al/gtm_replace_cart) | [Community Template Gallery]()
 
@@ -343,7 +343,7 @@ The Metrical Library Tag must be set to fire immediately before each and every M
 This tag should be triggered by a custom event that is configured to fire when you want to update state about the cart.
 
 
-### 🏷️ Metrical Action - Clear Cart Tag
+### Metrical Action - Clear Cart Tag
 
 [GitHub](https://github.com/metric-al/gtm_clear_cart) | [Community Template Gallery]()
 
@@ -364,7 +364,7 @@ The Metrical Library Tag must be set to fire immediately before each and every M
 This tag should be triggered by a custom event that is configured to fire when the system or customer clears their cart.
 
 
-### 🏷️ Metrical Action - Start Checkout Tag
+### Metrical Action - Start Checkout Tag
 
 [GitHub](https://github.com/metric-al/gtm_start_checkout) | [Community Template Gallery]()
 
@@ -393,7 +393,7 @@ The Metrical Library Tag must be set to fire immediately before each and every M
 This tag should be triggered by a custom event that is configured to fire when a customer enters the checkout workflow.
 
 
-### 🏷️ Metrical Action - Order Placed Tag
+### Metrical Action - Order Placed Tag
 
 [GitHub](https://github.com/metric-al/gtm_order_placed) | [Community Template Gallery]()
 
