@@ -108,7 +108,7 @@ For each of the tags below, you will find a table containing the fields availabl
 
 ## Metrical Library Tag
 
-[GitHub](https://github.com/metric-al/gtm_metrical_library) | [Community Template Gallery]()
+[GitHub](https://github.com/metric-al/gtm_metrical_library)
 
 Primary tag that will load the Metrical Cart Abandonment library onto your site. This tag must load on every page of your site.
 
@@ -155,7 +155,7 @@ If you don’t have a specific piece of data that is highlighted in the example 
 
 ### Metrical Action - Page Load Tag
 
-[GitHub](https://github.com/metric-al/gtm_page_load) | [Community Template Gallery]()
+[GitHub](https://github.com/metric-al/gtm_page_load)
 
 Indicates a new page or view of the website was loaded.  A fair bit of context can be provided for this event if it’s available when the event fires in the tag manager.
 
@@ -202,7 +202,7 @@ It is recommended that you trigger Metrical Action - Page Load Tag on a Page Vie
 
 ### Metrical Action - Product Information Tag
 
-[GitHub](https://github.com/metric-al/gtm_product_information) | [Community Template Gallery]()
+[GitHub](https://github.com/metric-al/gtm_product_information)
 
 If your tag manager processes and prepares product/PDP information asynchronous to a page load event, you can use this tag to supply just the product information the page is displaying.
 
@@ -239,7 +239,7 @@ This tag should be triggered by a custom event configured to fire when your prod
 
 ### Metrical Action - View Cart Tag
 
-[GitHub](https://github.com/metric-al/gtm_view_cart) | [Community Template Gallery]()
+[GitHub](https://github.com/metric-al/gtm_view_cart)
 
 For use if you have an event that fires when the customer displays their cart information. This does not require a payload object.
 
@@ -260,7 +260,7 @@ This tag should be triggered by a custom event that is configured to fire when t
 
 ### Metrical Action - Add to Cart Tag
 
-[GitHub](https://github.com/metric-al/gtm_add_to_cart) | [Community Template Gallery]()
+[GitHub](https://github.com/metric-al/gtm_add_to_cart)
 
 This can be used when an add to cart event is fired. The payload contains the information about the item(s) being added.
 
@@ -289,7 +289,7 @@ This tag should be triggered by a custom event that is configured to fire when a
 
 ### Metrical Action - Remove From Cart Tag
 
-[GitHub](https://github.com/metric-al/gtm_remove_from_cart) | [Community Template Gallery]()
+[GitHub](https://github.com/metric-al/gtm_remove_from_cart)
 
 This can be used when a remove from cart event is fired. The payload contains the information about the item(s) being removed.
 
@@ -316,7 +316,7 @@ This tag should be triggered by a custom event that is configured to fire when a
 
 ### Metrical Action - Replace Cart Tag
 
-[GitHub](https://github.com/metric-al/gtm_replace_cart) | [Community Template Gallery]()
+[GitHub](https://github.com/metric-al/gtm_replace_cart)
 
 There may be events or points in a customer’s session where you generate or have the actual cart state available. You can use this tag to tell Metrical about the actual cart state and Metrical can normalize its internal cart tracker to this information.
 
@@ -345,7 +345,7 @@ This tag should be triggered by a custom event that is configured to fire when y
 
 ### Metrical Action - Clear Cart Tag
 
-[GitHub](https://github.com/metric-al/gtm_clear_cart) | [Community Template Gallery]()
+[GitHub](https://github.com/metric-al/gtm_clear_cart)
 
 If you have an event that triggers if the system or customer clears their cart, you can use this tag to have Metrical do the same to its internal cart state.
 
@@ -366,7 +366,7 @@ This tag should be triggered by a custom event that is configured to fire when t
 
 ### Metrical Action - Start Checkout Tag
 
-[GitHub](https://github.com/metric-al/gtm_start_checkout) | [Community Template Gallery]()
+[GitHub](https://github.com/metric-al/gtm_start_checkout)
 
 Metrical likes to know when a customer enters the checkout workflow. This tag can be fired when that occurs. Payload contains the current state of the cart if available.
 
