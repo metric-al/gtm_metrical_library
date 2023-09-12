@@ -12,6 +12,8 @@ For general help setting up Google Tag Manager, see the Google developers [GTM g
 
 [General Info](#general-info)
 
+- [Template Installation](#template-installation)
+
 - [Deploying to Test/Staging & Production](#deploying-to-teststaging--production)
 
 - [Tag Fields](#tag-fields)
