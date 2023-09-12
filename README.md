@@ -70,6 +70,16 @@ Ensure that Metrical isn’t blocked by a CSP (Content Security Policy) on any p
 
 ## General Info
 
+### Template Installation
+
+1. Download the `template.tpl` file found within the template's GitHub repository. You may find a link to a template's GitHub repo directly under its section heading in the current document.
+
+2. Once you have the template file, create a new template within GTM and select 'import' from the vertical three dot menu. Select the template file you downloaded.
+
+3. After creating the template, create a new tag and select the template you just created asthe tag's configuration.
+
+4. Finally, follow the instructions below for each tag to ensure that the tag's fields and triggers are properly configured.
+
 ### Deploying to Test/Staging & Production
 
 Please work with your Metrical point of contact (PoC) to ensure you’re using the correct endpoints when deploying your software changes. All Metrical implementations must first take place in a Test/Staging environment. Once your Metrical PoC has ensured that all data transmitted to Metrical is formatted correctly and persisting as expected, you may then move your changes to a production environment.
