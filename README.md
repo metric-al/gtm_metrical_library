@@ -78,7 +78,7 @@ Ensure that Metrical isn’t blocked by a CSP (Content Security Policy) on any p
 
 2. Once you have the template file, create a new template within GTM and select 'import' from the vertical three dot menu. Select the template file you downloaded.
 
-3. After creating the template, create a new tag and select the template you just created asthe tag's configuration.
+3. After creating the template, create a new tag and select the template you just created as the tag's configuration.
 
 4. Finally, follow the instructions below for each tag to ensure that the tag's fields and triggers are properly configured.
 
