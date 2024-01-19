@@ -59,11 +59,11 @@ ___TEMPLATE_PARAMETERS___
     "help": "Custom override for library endpoint. Your PoC will tell you if this is required."
   },
   {
-    "type": "CHECKBOX",
+    "type": "TEXT",
     "name": "useStageEnv",
-    "checkboxText": "Use Stage Environment",
+    "displayName": "Use Stage Environment",
     "simpleValueType": true,
-    "help": "If selected, Metrical will use your stage environment. Otherwise, production environment will be used."
+    "help": "Static text representing whether Metrical will use your stage environment. If value is \"true\" Metrical will use your stage environment. If value is \"false\" Metrical will use your production environment.\nCan also be configured to use a dynamic variable. If using a GTM variable, the variable\u0027s value should be a boolean."
   }
 ]
 
@@ -73,6 +73,7 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 const copyFromWindow = require('copyFromWindow');
 const callInWindow = require('callInWindow');
 const injectScript = require('injectScript');
+const getType = require('getType');
 
 const _MetricalAbandonCart = copyFromWindow('_MetricalAbandonCart');
 
@@ -80,7 +81,13 @@ if (!_MetricalAbandonCart) {
   const metricalProductionId = "prod.com." + data.siteName + ".acconfig";
   const metricalStageId = "stage.com." + data.siteName + ".acconfig";
   const metricalShortHandId = data.metricalShortHandId;
-  const useStageEnv = data.useStageEnv || false; // replace this with logic to select your stage env
+
+  let useStageEnv;
+  if (getType(data.useStageEnv) === "string") {
+    useStageEnv = data.useStageEnv === "true" ? true : false;
+  } else {
+    useStageEnv = data.useStageEnv;
+  }
 
   const metricalId = data.overrideMetricalId || ((useStageEnv) ? metricalStageId : metricalProductionId);
   const shortCode = metricalShortHandId || "v2";
@@ -323,6 +330,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 8/31/2023, 3:02:29 PM
+Created on 1/19/2024, 1:45:39 PM
 
 
