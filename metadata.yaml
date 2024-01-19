@@ -1,5 +1,7 @@
 homepage: "https://metric.al/"
 documentation: "https://github.com/metric-al/gtm_metrical_library#readme"
 versions:
+  - sha: 14ea9b399b98d589339ff005fab926b4bac3f625
+    changeNotes: Change use stage env field to allow for dynamic environment selection and update field descriptions.
   - sha: d869da98f2bce74219cdec2593d22703bed75b41
     changeNotes: Initial release.
