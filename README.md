@@ -132,7 +132,8 @@ Primary tag that will load the Metrical Cart Abandonment library onto your site.
 | Site Code | Code for site's endpoint. Your PoC will tell you if this is required. | Basic Text | N/A | No
 | Metrical ID Override | Custom input for Metrical ID. Your PoC will tell you if this is required. | Basic Text | N/A | No
 | AC Library Source Override | Custom override for library endpoint. Your PoC will tell you if this is required. | Basic Text | N/A | No
-| Use Stage Environment | If selected, Metrical will use your stage environment. Otherwise, production environment will be used. Custom logic for environment selection may be used as well. See [Custom Environment Selection](#custom-environment-selection). | Check or GTM Variable | Boolean | No
+| Use Stage Environment | Static text representing whether Metrical will use your stage environment. If value is "true" Metrical will use your stage environment. If value is "false" Metrical will use your production environment.
+Can also be configured to use a dynamic variable. If using a GTM variable, the variable's value should be a boolean. See [Custom Environment Selection](#custom-environment-selection). | Basic Text or GTM Variable | N/A or Boolean | No
 
 See [Tag Fields](#tag-fields) for information on the type of input desired for each category.
 
@@ -195,7 +196,7 @@ Metrical Library Tag must be installed to use this tag.
 | Item Gender | If the page loaded is a PDP, the gender alignment of your product. | GTM Variable | String
 | Item Vendor | If the page loaded is a PDP, the name of your product's vendor. | GTM Variable | String |
 | Item Brand | If the page loaded is a PDP, the name of your product's brand. | GTM Variable | String |
-| Cart | List of items in your site's cart. Variable's value should be an array of objects, with each object including values representing the following keys: id, quantity, price, sku. The names of the keys representing them ought to be used for the fields below. | GTM Variable | Array
+| Cart | List representing the current customer's cart. Variable's value should be an array of objects, with each object including values that correspond to the following keys: id, quantity, price, and sku. Enter the names of the keys representing those values in the fields below. | GTM Variable | Array
 | Item Object ID Key Name | Name of the key on each item object in your cart representing the item's ID. | Object Key | String |
 | Item Object Quantity Key Name | Name of the key on each item object in your cart representing the item's quantity. | Object Key | Number |
 | Item Object Price Key Name | Name of the key on each item object in your cart representing the item's price. | Object Key | Number |
@@ -282,7 +283,7 @@ Metrical Library Tag must be installed to use this tag.
 
 | Field | Description | Category | Value Data Type |
 | :-: | - | :-: | :-: |
-| Item(s) Added | Item added or list of items added. <br> If only one item is being added, the variable's value should be an object that includes values representing the following keys: id, sku. The names of the keys representing them ought to be used for the fields below. <br> If multiple items are being added at once, the variable's value should be an array of objects, with each object including values representing the following keys: id, sku. The names of the keys representing them ought to be used for the fields below. | GTM Variable | Object or Array |
+| Item(s) Added | Item added or list of items added. <br> If there will always be only one item added at a time via this action, then the variable's value should be an object representing the item added that includes values that correspond to the following keys: id, quantity, price, and sku. <br> If there may be multiple items added at a time, then the variable's value should be an array of objects, with each object including id, quantity, price, and sku. <br> Regardless of whether one or multiple items may be added at a time, enter the names of the keys representing the values just mentioned in the fields below. | GTM Variable | Object or Array |
 | Item Object ID Key Name | Name of the key on each item object representing the item's ID. | Object Key | String |
 | Item Object Quantity Key Name | Name of the key on each item object representing the item's quantity. | Object Key | Number |
 | Item Object Price Key Name | Name of the key on each item object representing the item's price. | Object Key | Number |
@@ -311,7 +312,7 @@ Metrical Library Tag must be installed to use this tag.
 
 | Field | Description | Category | Value Data Type |
 | :-: | - | :-: | :-: |
-| Item(s) Removed | Item removed or list of items removed. <br> If only one item is being removed, the variable's value should be an object that includes values representing the following keys: id, sku. The names of the keys representing them ought to be used for the fields below. <br> If multiple items are being removed at once, the variable's value should be an array of objects, with each object including values representing the following keys: id, sku. The names of the keys representing them ought to be used for the fields below. | GTM Variable | Object or Array |
+| Item(s) Removed | Item removed or list of items removed. <br> If there will always be only one item removed at a time via this action, then the variable's value should be an object representing the item removed that includes values that correspond to the following keys: id, quantity, price, and sku. <br> If there may be multiple items removed at a time, then the variable's value should be an array of objects, with each object including id, quantity, price, and sku. <br> Regardless of whether one or multiple items may be removed at a time, enter the names of the keys representing the values just mentioned in the fields below. | GTM Variable | Object or Array |
 | Item Object ID Key Name | Name of the key on each item object representing the item's ID. | Object Key | String |
 | Item Object SKU Key Name | Name of the key on each item object representing the item's SKU. | Object Key | String |
 
@@ -338,7 +339,7 @@ Metrical Library Tag must be installed to use this tag.
 
 | Field | Description | Category | Value Data Type |
 | :-: | - | :-: | :-: |
-| Cart | List of items in your site's cart. Variable's value should be an array of objects, with each object including values representing the following keys: id, quantity, price, sku. The names of the keys representing them ought to be used for the fields below. | GTM Variable | Array
+| Cart | List representing the current customer's cart. Variable's value should be an array of objects, with each object including values that correspond to the following keys: id, quantity, price, and sku. Enter the names of the keys representing those values in the fields below. | GTM Variable | Array
 | Item Object ID Key Name | Name of the key on each item object in your cart representing the item's ID. | Object Key | String |
 | Item Object Quantity Key Name | Name of the key on each item object in your cart representing the item's quantity. | Object Key | Number |
 | Item Object Price Key Name | Name of the key on each item object in your cart representing the item's price. | Object Key | Number |
@@ -388,7 +389,7 @@ Metrical Library Tag must be installed to use this tag.
 
 | Field | Description | Category | Value Data Type |
 | :-: | - | :-: | :-: |
-| Cart | List of items in your site's cart. Variable's value should be an array of objects, with each object including values representing the following keys: id, quantity, price, sku. The names of the keys representing them ought to be used for the fields below. | GTM Variable | Array
+| Cart | List representing the current customer's cart. Variable's value should be an array of objects, with each object including values that correspond to the following keys: id, quantity, price, and sku. Enter the names of the keys representing those values in the fields below. | GTM Variable | Array
 | Item Object ID Key Name | Name of the key on each item object in your cart representing the item's ID. | Object Key | String |
 | Item Object Quantity Key Name | Name of the key on each item object in your cart representing the item's quantity. | Object Key | Number |
 | Item Object Price Key Name | Name of the key on each item object in your cart representing the item's price. | Object Key | Number |
@@ -431,7 +432,7 @@ Metrical Library Tag must be installed to use this tag.
 | Billing City | City of the customer's billing address. | GTM Variable | String |
 | Billing State | State of the customer's billing address. | GTM Variable | String |
 | Billing County | County of the customer's billing address. | GTM Variable | String |
-| Cart | List of items in your site's cart. Variable's value should be an array of objects, with each object including values representing the following keys: id, quantity, price, sku. The names of the keys representing them ought to be used for the fields below. | GTM Variable | Array
+| Cart | List representing the current customer's cart. Variable's value should be an array of objects, with each object including values that correspond to the following keys: id, quantity, price, and sku. Enter the names of the keys representing those values in the fields below. | GTM Variable | Array
 | Item Object ID Key Name | Name of the key on each item object in your cart representing the item's ID. | Object Key | String |
 | Item Object Quantity Key Name | Name of the key on each item object in your cart representing the item's quantity. | Object Key | Number |
 | Item Object Price Key Name | Name of the key on each item object in your cart representing the item's price. | Object Key | Number |
